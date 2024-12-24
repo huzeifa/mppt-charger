@@ -1227,6 +1227,143 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:HT75xx-1-SOT89"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "HT75xx-1-SOT89"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "100mA LDO Regulator Fixed Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?89*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "HT75xx-1-SOT89_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "HT75xx-1-SOT89_1_1"
+				(pin power_in line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:IRLZ44N"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -1974,10 +2111,28 @@
 		(uuid "829ff35c-5636-480d-80de-d28bdedf24e9")
 	)
 	(junction
+		(at 241.3 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86412c53-c36b-4046-8317-1adec44fc699")
+	)
+	(junction
 		(at 234.95 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c60003d-7678-47b1-99a7-512f1133c910")
+	)
+	(junction
+		(at 254 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ac61177-e1ca-435f-bbb0-73eed207184d")
+	)
+	(junction
+		(at 241.3 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b7ad6e7-13e6-499d-a046-1a4c6fa5d7e6")
 	)
 	(junction
 		(at 40.64 93.98)
@@ -1990,6 +2145,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5e68105-19cd-4c2e-ad64-0ec298187795")
+	)
+	(junction
+		(at 224.79 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a67bc0b0-293a-4f91-8fb3-c528eada6889")
 	)
 	(junction
 		(at 40.64 96.52)
@@ -2051,6 +2212,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 151.13) (xy 241.3 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00238f3c-c5f7-48cf-b474-ea2f18c07b5e")
+	)
+	(wire
+		(pts
 			(xy 204.47 55.88) (xy 204.47 63.5)
 		)
 		(stroke
@@ -2058,6 +2229,16 @@
 			(type default)
 		)
 		(uuid "04fdf495-1558-4300-8f93-9907d65ec8b1")
+	)
+	(wire
+		(pts
+			(xy 224.79 142.24) (xy 224.79 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "055a0966-e22f-4ba6-af7d-aced2fe1a7c9")
 	)
 	(wire
 		(pts
@@ -2141,6 +2322,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 149.86) (xy 224.79 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fb79e2b-c460-4f1f-9f9c-2ffbffcc0fec")
+	)
+	(wire
+		(pts
 			(xy 219.71 63.5) (xy 214.63 63.5)
 		)
 		(stroke
@@ -2201,6 +2392,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 151.13) (xy 241.3 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b517169-d77b-4c55-bdd4-96d7e8164345")
+	)
+	(wire
+		(pts
 			(xy 264.16 96.52) (xy 264.16 99.06)
 		)
 		(stroke
@@ -2228,6 +2429,16 @@
 			(type default)
 		)
 		(uuid "21eaf02b-e5ca-4bb8-885c-179f095fb1b2")
+	)
+	(wire
+		(pts
+			(xy 241.3 153.67) (xy 241.3 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237e14dc-bde2-454a-88ae-16db3adbccd8")
 	)
 	(wire
 		(pts
@@ -2298,6 +2509,26 @@
 			(type default)
 		)
 		(uuid "2fcbc99a-91cd-4672-93b0-de5697fc25c0")
+	)
+	(wire
+		(pts
+			(xy 220.98 142.24) (xy 224.79 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3326f6d0-74c6-4887-9a3a-55df4bcbab66")
+	)
+	(wire
+		(pts
+			(xy 254 142.24) (xy 248.92 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337c40de-21da-49e4-961b-31bbee905f9a")
 	)
 	(wire
 		(pts
@@ -2391,6 +2622,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 135.89) (xy 260.35 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47bb51aa-f156-4e4f-8384-da20c11c0ae4")
+	)
+	(wire
+		(pts
 			(xy 234.95 63.5) (xy 237.49 63.5)
 		)
 		(stroke
@@ -2451,6 +2692,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 149.86) (xy 241.3 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f36ed0a-ba22-452f-82b3-0e4dbe99e875")
+	)
+	(wire
+		(pts
 			(xy 52.07 63.5) (xy 43.18 63.5)
 		)
 		(stroke
@@ -2478,6 +2729,16 @@
 			(type default)
 		)
 		(uuid "5027aa70-33f2-4704-8f3b-7e590fe1f945")
+	)
+	(wire
+		(pts
+			(xy 260.35 142.24) (xy 254 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d8a188-d2ee-4532-a479-5253f19f2b24")
 	)
 	(wire
 		(pts
@@ -2661,6 +2922,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 142.24) (xy 233.68 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "705b2b43-0fda-416a-853f-7d374000003c")
+	)
+	(wire
+		(pts
 			(xy 156.21 55.88) (xy 156.21 63.5)
 		)
 		(stroke
@@ -2698,6 +2969,16 @@
 			(type default)
 		)
 		(uuid "7d0ee848-ba28-4664-914d-9b99157294e4")
+	)
+	(wire
+		(pts
+			(xy 220.98 135.89) (xy 220.98 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80bfefff-47bc-4fd2-9c57-3369c7fb262b")
 	)
 	(wire
 		(pts
@@ -2921,6 +3202,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 153.67) (xy 241.3 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ada4e717-5156-4bd4-a630-1efd4823c223")
+	)
+	(wire
+		(pts
 			(xy 254 106.68) (xy 254 109.22)
 		)
 		(stroke
@@ -3038,6 +3329,16 @@
 			(type default)
 		)
 		(uuid "cf4b7a33-e58a-45b8-a9a0-b6ab505ed0e9")
+	)
+	(wire
+		(pts
+			(xy 254 142.24) (xy 254 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a31662-c7f0-49d2-bdee-2bf6e5bcb635")
 	)
 	(wire
 		(pts
@@ -3671,6 +3972,144 @@
 			(project "mppt_half_bridge"
 				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:HT75xx-1-SOT89")
+		(at 241.3 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2293489d-3596-4e59-bcba-f3e5cfef6f2a")
+		(property "Reference" "U2"
+			(at 241.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HT75xx-1-SOT89"
+			(at 241.3 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 241.3 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
+			(at 241.3 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
+			(at 241.3 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "88b6d394-5b6d-4aaf-8579-682cd136737c")
+		)
+		(pin "2"
+			(uuid "ac5ba78a-d14c-4ed3-92ef-d828391dc736")
+		)
+		(pin "1"
+			(uuid "89630dad-91a8-4b05-8778-638dd7d7cc65")
+		)
+		(instances
+			(project ""
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 260.35 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "232bb645-47a2-4f27-8d97-0e611ed7350f")
+		(property "Reference" "#PWR016"
+			(at 260.35 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 260.35 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e858510d-707e-4891-8362-b381d8289671")
+		)
+		(instances
+			(project "mppt_half_bridge"
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4550,6 +4989,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 254 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "695f05b6-0096-4779-9168-d9da6616f92d")
+		(property "Reference" "C17"
+			(at 256.54 147.3262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 256.54 149.8662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 254 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 258.318 151.892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b3f85d8-fec1-4f33-baa5-a58465d46900")
+		)
+		(pin "2"
+			(uuid "3299bf00-8273-4079-9143-01eed5ee8d73")
+		)
+		(instances
+			(project "mppt_half_bridge"
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 30.48 106.68 0)
 		(unit 1)
@@ -4979,6 +5495,72 @@
 			(project "mppt_half_bridge"
 				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a515189-1b7f-4ae0-ad69-3646a50188c1")
+		(property "Reference" "#PWR015"
+			(at 241.3 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 159.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11e39d19-a9f7-45df-860e-c2199c70cc8f")
+		)
+		(instances
+			(project "mppt_half_bridge"
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5727,6 +6309,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 224.79 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c46a7ee8-3aec-49c3-a352-9be2e7b5c5e1")
+		(property "Reference" "C16"
+			(at 227.33 146.0562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 227.33 148.5962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 224.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 229.108 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8b07756-60fe-4e9c-931b-448a56d7ce73")
+		)
+		(pin "2"
+			(uuid "d6b6a40c-8f70-4ba5-a5ba-034d0438c212")
+		)
+		(instances
+			(project "mppt_half_bridge"
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2024-11-21_11-20-24:LM5106MM_NOPB")
 		(at 40.64 153.67 0)
 		(unit 1)
@@ -6373,6 +7032,72 @@
 			(project ""
 				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 220.98 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3345080-9b70-4442-94ed-aaebf13fccce")
+		(property "Reference" "#PWR014"
+			(at 220.98 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 220.98 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 220.98 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d199f60-2b28-424b-a270-baf8575d8a6b")
+		)
+		(instances
+			(project "mppt_half_bridge"
+				(path "/b7204ba6-2589-4e3e-978a-1da6ac78b7dc"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
